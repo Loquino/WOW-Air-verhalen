@@ -4,40 +4,59 @@
 <head>
     <title>WOW Air Verhalen</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <h1>WOW air Vehalen</h1>
+
         <nav>
+            <img src="https://valholl-prd.wowair.com/css/i/sitelogo.svg" alt="WOW air logo">
             <ul>
-                <li><input type="text" placeholder="Zoek naar..."></li>
-                <li>Profiel</li>
-                <li>Favoriete verhalen</li>
+                <li class="search-btn"><input type="text" placeholder="Zoek naar..."></li>
+                <li class="pf-btn"><span>Profiel</span></li>
+                <li class="fav-btn"><span>Favoriete verhalen</span></li>
             </ul>
         </nav>
-        <p><button>Sorteer</button></p>
-        <p><button>Filter</button></p>
-        <form>
-            <input type="checkbox" name="filter" value="Populair"> Populair<br>
-            <input type="checkbox" name="filter" value="Meest gelezen"> Meest gelezen<br>
-            <input type="checkbox" name="filter" value="Muziek"> Muziek
-        </form>
+
+        <fieldset>
+            <legend>Formulier</legend>
+            <form action="/action_page.php">
+                <label>Login naam:<input type="text" placeholder="Voer je loginnaam" name="gnaam"></label>
+
+                <label>Paswoord:<input type="password" placeholder="Voer je wachtwoord in" name="psw">
+            </label>
+                <input type="submit" value="Submit">
+            </form>
+
+        </fieldset>
+
+        <p><button>Sorteer</button> <button>Filter</button></p>
+        <fieldset>
+            <form>
+                <input type="checkbox" name="filter" value="Populair"> Populair
+                <input type="checkbox" name="filter" value="Meest gelezen"> Meest gelezen
+                <input type="checkbox" name="filter" value="Muziek"> Liedjes
+            </form>
+        </fieldset>
+
     </header>
 
     <main>
-
+        <h1>WOW air Verhalen</h1>
         <section>
-            <h2>Porpulaire verhalen</h2>
+            <h2>Populaire verhalen</h2>
 
             <article>
                 <h3>Gestructureerd</h3>
-                <p>
-
-                </p>
+                <img src="images/Skull.jpg" alt="afbeelding van gestructureerd" />
+                <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het leven aan moet, is dit gerecht ook heel lekker. Drinksuggestie: een krat bier. Ingrediënten: Hoofdingrediënten: 1 Max Molovich (ongeveer 77 kilogram) 1 zoon</p>
                 <footer>
-
+                    <p class="heeltof">
+                        <span>Heel tof !</span>
+                    </p>
                 </footer>
             </article>
 
@@ -67,17 +86,27 @@
             </article>
 
         </section>
+        <h2>Regristreren</h2>
+        <fieldset>
+            <legend>Formulier</legend>
+            <form action="/action_page.php">
+                <label>Naam<input></label>
+                <label>Achternaam<input></label>
+                <label>Emailadres<input type="email"></label>
+                <label>Postcode<input type="text" required maxlength="6"></label>
+                <p><input type="submit" value="Submit"></p>
+            </form>
 
+        </fieldset>
     </main>
 
     <footer>
         <section>
             <h2>Ovrige pagina's</h2>
             <ul>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
+                <li>Over ons</li>
+                <li>WOW Air</li>
+                <li>Contact</li>
             </ul>
         </section>
         <p>© 2018 WOW air</p>
