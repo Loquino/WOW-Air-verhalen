@@ -1,4 +1,204 @@
-body{
+body {
     background: #fff;
     font-family: helvetica;
+    font-size: 1em;
+    width: 24em;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+header {
+    width: 100%
+}
+
+header img {
+    padding: 0 0 0 10em;
+    width: 4em;
+
+
+}
+
+header fieldset {
+    display: none;
+}
+
+nav {
+    display: flex;
+    border-bottom: solid 0.1em;
+    border-color: #6c6968;
+    max-height: 5em;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 1em;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 1em;
+}
+
+.search-btn input {
+    display: none;
+}
+
+.search-btn::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    content: "\f002";
+    color: #9c1a7f;
+}
+
+.pf-btn span {
+    display: none;
+}
+
+.pf-btn::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    content: "\f007";
+    color: #9c1a7f;
+}
+
+.fav-btn span {
+    display: none;
+}
+
+.fav-btn::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    content: "\f005";
+    color: #9c1a7f;
+}
+
+header p {
+    margin: 0em;
+    display: flex;
+}
+
+header button {
+    border: none;
+    background: #9c1a7f;
+    padding: 1.2em;
+    font-weight: 400;
+    font-size: inherit;
+    width: 50%;
+    color: #fff;
+}
+
+header button:focus {
+    outline: none;
+    background: #ffe151;
+    color: #9c1a7f;
+}
+
+
+main {
+    padding: 0 0.5em;
+    background: #fafafa;
+}
+
+article {
+    padding: 0.5em;
+    border: solid 0.1em #6c6968;
+    margin-bottom: 2em;
+}
+
+main footer {
+    background: none;
+    border: none;
+    font-size: 1em;
+
+}
+
+footer form {
+    background: #ffe151;
+    padding: 1em;
+}
+
+main form p input {
+    outline: none;
+    background: #ffe151;
+    color: #9c1a7f;
+    padding: 1em;
+    font-size: inherit;
+    width: 58%;
+
+}
+main form input {
+    width: 50%;
+    padding: 1em;
+}
+
+
+img {
+    width: 100%;
+    margin-left: -1;
+    margin-top: -1;
+}
+
+
+h1 a {
+    color: hsl(30, 100%, 0%);
+}
+
+.heeltof::before {
+    content: "★★★★☆";
+}
+
+
+label,
+input {
+    display: block;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input:focus {
+    border-color: green;
+    outline: none;
+}
+
+footer {
+    padding: 0.5em;
+    background: #f9f5ef;
+    text-align: center;
+    color: #2b4040;
+}
+
+footer ul{
+    padding: 0em;
+}
+footer li{
+    margin-bottom: 1em;
+    list-style: none;
+    border-bottom: solid 0.2em #99258d;
+}
+
+footer p{
+    font-size: 0.8em;
+    border-top: solid 0.2em #cac8c5;
+    padding-top: 1em;
+}
+
+
+@media (max-width: 100em) {
+    body {
+        font-size: large;
+    }
+
+
+}
+
+@media (max-width: 40em) {
+    body {
+        font-size: medium;
+    }
+
+
 }
