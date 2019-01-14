@@ -1,0 +1,459 @@
+body {
+
+    background: #fff;
+    border: solid 0.3em #9c1a7f;
+    color: #2b4040;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1em;
+    margin: 0;
+
+}
+
+a {
+    color: #9c1a7f;
+}
+
+body header,
+main {
+    margin: 0 5%;
+}
+
+img {
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 1.2em;
+    margin: 0;
+    width: 100%;
+
+
+}
+button:focus {
+    outline: none;
+}
+
+/*NAVIGATIE BALK*/
+
+h1 span {
+    display: none;
+}
+
+h1 img {
+    margin: 0 35%;
+    max-height: 4em;
+    position: absolute;
+    width: 20%;
+
+}
+
+/*END*/
+
+/*NAVIGATIE BALK*/
+
+nav {
+    margin-bottom: 2em;
+    padding-top: 1%;
+}
+
+nav ul {
+    border-bottom: solid 0.01em grey;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0 0 1em 60%;
+
+}
+
+nav li {
+    margin: 0 0.4em 0 0;
+}
+
+nav form {
+    display: none;
+}
+
+nav li:nth-of-type(1)::after {
+    color: #9c1a7f;
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 0.2em;
+
+}
+
+nav li:nth-of-type(2)::after {
+    color: #9c1a7f;
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    margin-left: 0.2em;
+}
+
+nav li:nth-of-type(3)::after {
+    color: #9c1a7f;
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 0.2em;
+}
+
+nav fieldset {
+    display: none;
+}
+
+/*END*/
+
+/*BANNER*/
+
+header section {
+    background: url(/images/banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 7em;
+    padding-top: 5%;
+    text-align: center;
+}
+
+/*END*/
+
+/*Kruimelpad*/
+
+header p {
+    color: #9c1a7f;
+    margin: 0.3em 0;
+}
+
+/*END*/
+
+/*ARTICLES*/
+
+main {
+    margin-bottom: 2.5em;
+    overflow: hidden;
+}
+
+main article {
+    background: #fff;
+    border: solid 0.05em grey;
+    border-radius: 0.1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+main section h2 {
+    display: grid;
+    margin: 0.4em 0;
+}
+
+article img {
+    max-height: 10em;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+h3 {
+    padding: 0 0.5em
+}
+p  button:nth-of-type(1) {
+    background: #9c1a7f;
+    border: none;
+    color: #fff;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    right: 10em;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+p  button:nth-of-type(2) {
+    align-items: center;
+    background: #fff;
+    border: 0;
+    border-bottom: solid 0.5em #FFDF5D;
+    color: #9c1a7f;
+    overflow: hidden;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+p:nth-of-type(3) {
+    grid-row: 1/5;
+    grid-column: 2/2;
+}
+
+article footer {
+    padding: 0 0.5em;
+    grid-template: 50% 50% / 80% 20%;
+    display: grid;
+}
+
+article small {
+    background: #9c1a7f;
+    color: #fff;
+    display: flex;
+    margin-left: 0.5em;
+    padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10.9em;
+
+}
+
+/*Favorite button*/
+
+article > button span:nth-of-type(1) {
+    display: none;
+}
+/*article > button:nth-of-type(1)::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-size: 2.5em;
+}
+/*Like button*/
+article footer p button span:nth-of-type(1) {
+    color: #000;
+}
+
+article footer p button span:nth-of-type(2) {
+    display: none;
+}
+
+
+aarticle footer p button::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-size: 3em;
+}
+
+i.far.fa-heart {
+    font-size: 3em;
+}
+
+/*Micro interactie*/
+
+
+.like::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s linear;
+    -o-animation: bounce 0.5s linear;
+    -webkit-animation: bounce 0.5s linear;
+    animation: bounce 0.5s linear;
+    animation-duration: 1s;
+}
+
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: -0.2em;
+    }
+
+    20% {
+        top: -0.3em;
+    }
+
+    40% {
+        top: 0;
+    }
+
+    from {
+        color: #fff;
+    }
+
+    to {
+        color: #9c1a7f;
+    }
+}
+
+i.far.fa-star{
+    font-size: 3em;
+}
+
+.shownavfav::after{
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+
+.showfav::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #FFDF5D;
+
+}
+
+
+.bg-fav {
+
+    background: #9c1a7f;
+    width: 5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    animation: fav-bg 1.5s 2;
+  animation-direction: alternate;
+
+}
+
+@keyframes fav-bg {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: -10px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    100% {
+        top: -400px;
+        background-color: #FFDF5D;
+        color: #FFDF5D;
+
+    }
+
+}
+
+/*END*/
+
+/*FOOTER*/
+
+body > footer {
+    background: #f4eee8;
+    padding: 5% 2% 0 0;
+
+}
+
+footer section {
+    background: url(/images/wow-logo-foot.min.png) 50% 0 no-repeat;
+    background-size: 90%;
+    margin: 0 30%;
+    padding: 15% 0 5% 0;
+    text-align: center;
+
+}
+
+/*END*/
+
+
+
+/*END*/
+
+/*MAYOR BREAKPOINTS*/
+
+@media (min-width: 60em) {
+    body {
+        background: white;
+
+    }
+
+    nav {
+        margin-bottom: 3em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+    main section {
+        display: grid;
+    }
+
+    main article:first-of-type {
+        margin-right: 1em;
+    }
+
+    main article {
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media (max-width: 60em) {
+    body {
+        ;
+        border: none;
+        margin: 0.1em;
+    }
+
+    body header,
+    main {
+        margin: 0 2%;
+    }
+
+    header section {
+        margin-top: 7em;
+        min-height: 5em;
+        padding-top: 3%;
+    }
+
+    body > footer {
+        padding: 5% 2% 0 0;
+
+    }
+
+    nav ul {
+        margin-right: 1em;
+    }
+
+    nav {
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        padding-bottom: 1em;
+        top: 0;
+    }
+
+    nav li a {
+        display: none;
+    }
+
+
+
+    aside {
+        display: flex;
+        margin-bottom: 1em;
+    }
+
+
+    footer section {
+        margin: 0 10%;
+        padding: 25% 0 5% 0;
+
+    }
+
+}
+
+@media (max-width: 30em) {
+    nav ul {
+        margin-right: 1em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 0 4em;
+    }
+
+
+}
