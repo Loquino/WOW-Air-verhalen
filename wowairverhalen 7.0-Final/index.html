@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Air Verhalen</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href="/#">
+                <h1><span>WOW air Verhalen</span><img src="https://valholl-prd.wowair.com/css/i/sitelogo.svg" alt="WOW air logo">
+                </h1>
+            </a>
+            <ul>
+                <li>
+                    <form action="/zoekresultaten.html">
+                        <label>
+                            <input type="search" placeholder=" Zoek een verhaal...">
+                        </label>
+                        <button type="submit"><span>Zoek</span></button>
+                    </form>
+                </li>
+
+                <li><a>Mijn acount </a></li>
+                <li><a href="/favorieten.html">Favorieten </a><span id="count">0</span></li>
+            </ul>
+
+            <fieldset>
+                <legend>Inloggen</legend>
+                <form action="/action_page.php">
+                    <label>Email:<input type="email" placeholder=" email@voorbeeld.nl"></label>
+
+                    <label>Wachtwoord:<input type="password" placeholder=" ●●●●●●"></label>
+
+                    <label><input type="submit" value="Inloggen"></label>
+                </form>
+                <p>Inloggen met socialmedia:</p>
+                <p><button><i class="fab fa-facebook-f"></i></button> <button><i class="fab fa-google-plus-g"></i></button> <button><i class="fab fa-twitter"></i></button></p>
+
+            </fieldset>
+
+        </nav>
+        <section>
+
+            <h2>Welkom bij de WOWair verhalen site</h2>
+        </section>
+
+        <p>Home /</p>
+
+    </header>
+    <div id="popup"></div>
+    <main>
+
+        <aside>
+            <button>Filter</button>
+            <fieldset>
+                <legend>Filter op categoriën</legend>
+                <form>
+
+                    <label>Taalgebruik</label>
+                    <ul>
+                        <li><label><input type="checkbox" name="filter" value="beeldtaal">Beeldtaal (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="dialoog">Dialoog (6)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="groftaal">Groftaal (3)<span></span></label></li>
+                    </ul>
+                    <label>Bekendheid</label>
+                    <ul>
+                        <li><label><input type="checkbox" name="filter" value="celeb">Celeb (5)<span></span></label></li>
+
+                    </ul>
+                    <label>Emotie</label>
+                    <ul>
+                        <li><label><input type="checkbox" name="filter" value="duister">Duister (5)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="eenzaam">Eenzaam (1)<span></span></label></li>
+                    </ul>
+                    <label>Genres</label>
+                    <ul>
+                        <li><label><input type="checkbox" name="filter" value="fictief">Fictief (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="humor">Humor (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="realistisch">Realistisch (56)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="kinderlijk">Kinderlijk (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="muzikaal">Muzikaal (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="ouderwest">Ouderwest (3)<span></span></label></li>
+                        <li><label><input type="checkbox" name="filter" value="roman">Roman (3)<span></span></label></li>
+                    </ul>
+
+                    <label><input type="submit" value="Zie resulaten (2)"></label>
+                </form>
+
+            </fieldset>
+
+            <button>Sorteer</button>
+            <fieldset>
+                <legend>Sorteer volgorde op:</legend>
+                <form>
+                    <ul>
+                        <li><label><input type="radio" name="sorteer" value="aantaal gelezen" checked="checked"> Aanbevolen <span></span></label></li>
+                        <li><label><input type="radio" name="sorteer" value="aantaal gelezen"> Aantal gelezen <span></span></label></li>
+                        <li><label><input type="radio" name="sorteer" value="beoordeling"> Beoordeling <span></span></label></li>
+                        <li><label><input type="radio" name="sorteer" value="datum"> Upload datum <span></span></label></li>
+                    </ul>
+                </form>
+            </fieldset>
+
+        </aside>
+
+        <span><button><span>Grid</span></button><button><span>Lijst</span></button></span>
+        <section>
+            <h2>Meest populair</h2>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Recept" src="images/recept-1.jpg"></picture>
+                <a href="/verhaal-1.html">
+                    <h3>Recept</h3>
+                </a>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Humor</small>
+                <footer>
+                    <p>04 Mei 2011</p>
+                    <p><span>100 ster</span> <span>100 views</span></p>
+                    <p><button><span>150</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Interview" src="images/Interview%20(78).jpg"></picture>
+                <h3>Interview</h3>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Dialoog</small>
+                <footer>
+                    <p>1 juni 2011</p>
+                    <p><span>100 ster</span> <span>100 views</span></p>
+                    <p><button><span>130</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+        </section>
+
+
+        <section>
+            <h2>Meest gelezen</h2>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Alzheimer" src="images/Alzheimer-Poster-V2.jpg"></picture>
+                <h3>Alzheimer</h3>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Duister</small>
+                <footer>
+                    <p>11 maart 2011</p>
+                    <p><span>100 ster</span> <span>300 views</span></p>
+                    <p><button><span>100</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Eenzaam" src="images/eenzaam-1.jpg"></picture>
+                <h3>Eenzaam</h3>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Eenzaam</small>
+                <footer>
+                    <p>15 september 2011</p>
+                    <p><span>100 ster</span> <span>250 views</span></p>
+                    <p><button><span>100</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Meest bewaard</h2>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Nichterig" src="images/Nichterig_Desktop_Luuk_Arts%20(1).png"></picture>
+                <h3>Nichterig</h3>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Beeldtaal</small>
+                <footer>
+                    <p>8 maart 2011</p>
+                    <p>95 <span>bewaard</span> 100 <span>views</span></p>
+                    <p><button><span>100</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+            <article>
+                <picture><img alt="Een foto van het verhaal: Overdreven" src="images/Verhaal_Marilyn_Doornoink.jpg"></picture>
+                <h3>Charlie Sheen</h3>
+                <button><span>Bewaren</span><i class="far fa-star"></i></button>
+                <small>Celeb</small>
+                <footer>
+                    <p>10 maart 2011</p>
+                    <p><span>55 ster</span> <span>100 views</span></p>
+                    <p><button><span>100</span> <span>Like</span><i class="far fa-heart"></i></button></p>
+                </footer>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <section>
+            <h2>Nog steeds aan het zoeken?</h2>
+            <p><a href="http://www.wowair.nl">www.wowair.nl</a> | <a href="#">Over WOWair verhalen</a></p>
+        </section>
+
+    </footer>
+
+    <script src='functions/functions.js'>
+    </script>
+</body>
+
+</html>

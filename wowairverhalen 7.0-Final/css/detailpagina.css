@@ -1,0 +1,892 @@
+body {
+
+    background: #fff;
+    border: solid 0.3em #9c1a7f;
+    color: #2b4040;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+
+}
+
+a {
+    color: #9c1a7f;
+}
+
+body header {
+    margin: 0 5%;
+}
+
+img {
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 1.2em;
+    margin: 0 45%;
+    position: absolute;
+    display: flex;
+
+
+}
+
+/*NAVIGATIE BALK*/
+
+header {
+    position: relative;
+}
+
+h1 span {
+    display: none;
+}
+
+h1 img {
+    max-height: 4em;
+
+    width: 4em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: 2em;
+    padding-top: 1%;
+}
+
+nav ul {
+    border-bottom: solid 0.01em grey;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 0 0 0.5em 55%;
+}
+
+nav li {
+    margin: 0 1em 0 0;
+}
+
+nav form {
+    display: none;
+}
+
+nav li:nth-of-type(1)::after {
+    color: #9c1a7f;
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 0.2em;
+
+}
+
+nav li:nth-of-type(2)::after {
+    color: #9c1a7f;
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 0.2em;
+}
+
+nav li:nth-of-type(3)::after {
+    color: #9c1a7f;
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+
+    margin-left: 0.2em;
+}
+
+/* Log in formulier */
+nav fieldset {
+    background: #fbfbfb;
+    display: none;
+    margin: 3em 10%;
+}
+
+.showlogin {
+    display: block;
+}
+
+nav fieldset > form {
+    display: flex;
+    flex-direction: column;
+}
+
+nav fieldset label {
+    display: flex;
+    flex-direction: column;
+}
+
+nav fieldset p > button {
+    width: 32%;
+    border: none;
+    background: #fee139;
+    height: 3em;
+    font-size: 1em;
+}
+
+nav fieldset p > button:focus {
+    outline: solid #9c1a7f;
+}
+
+header fieldset [type="email"],
+[type="password"] {
+    height: 2em;
+    width: 50%;
+    margin-bottom: 1em;
+    margin-top: 0.6em;
+}
+
+header fieldset [type="email"]:focus,
+[type="password"]:focus {
+    outline: solid #9c1a7f;
+}
+
+input[type="email"]:valid {
+    background: #01cf0c52;
+}
+
+input[type="email"]:invalid {
+    background: #cf010152;
+}
+
+nav fieldset [type="submit"] {
+    width: 51%;
+    height: 3.5em;
+    background: #9c1a7f;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+nav fieldset [type="submit"]:focus {
+    outline: solid #fde300;
+}
+
+/*END*/
+
+/*Kruimelpad*/
+
+header p {
+    color: #9c1a7f;
+    margin: 0.3em 0;
+}
+
+/*END*/
+
+/* ASIDE */
+
+aside p:hover {
+    color: #fde300;
+}
+
+aside {
+    background: #9c1a7f;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+aside h2 {
+    grid-row: 1/2;
+}
+
+
+/*END*/
+
+
+/*SECTIONS */
+
+main h2 span {
+    display: none;
+}
+
+main section:nth-of-type(1) h2 {
+    background: url(/images/Section-1.1.png);
+    height: 16em;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+
+}
+
+main section {
+    padding: 0 20%;
+    position: relative
+}
+
+main section p {
+    padding: 0 0 0 17%;
+    line-height: 3.3em;
+    position: absolute;
+    z-index: 98;
+    bottom: 0.5em;
+    width: 42%;
+    margin: 0;
+    color: #fff;
+}
+
+main section ul {
+    padding: 0 0 0 17%;
+    line-height: 3.5em;
+    position: absolute;
+    bottom: 0em;
+    width: 42%;
+    margin: 0;
+    color: #fff;
+    list-style: none;
+    text-shadow: 0.1em 0.1em 1em #fdc700;
+}
+
+main section:nth-of-type(1) {
+    background-color: #1994bf;
+}
+
+main section:nth-of-type(2) {
+    background-color: #fdc700;
+}
+
+main section:nth-of-type(2) h2 {
+    background: url(/images/Section-2.png);
+    height: 25.3em;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+main section:nth-of-type(3) {
+    background-color: #f9ad81;
+}
+
+main section:nth-of-type(3) h2 {
+    background: url(/images/Section-3.png);
+    height: 22.3em;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+main section:nth-of-type(3) ul {
+    text-shadow: 0.1em 0.1em 1em #f9ad81;
+    line-height: 3.4em;
+}
+
+main section:nth-of-type(4) {
+    background-color: #ed6e50;
+}
+
+main section:nth-of-type(4) h2 {
+    background: url(/images/Section-4.png);
+    height: 39.5em;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+main section:nth-of-type(4) p {
+    padding: 0 0 0 17%;
+    line-height: 3.5em;
+    position: absolute;
+    bottom: 0em;
+    width: 43%;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 1em #ed6e50;
+}
+
+main section:nth-of-type(5) {
+    background-color: #cfa8be;
+}
+
+main section:nth-of-type(5) h2 {
+    background: url(/images/Section-5.png);
+    height: 36.5em;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+main section:nth-of-type(5) p {
+    padding: 0 0 0 17%;
+    line-height: 3.45em;
+    position: absolute;
+    bottom: 0em;
+    width: 43%;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 1em #cfa8be;
+}
+
+/*SLIDE EFFECT*/
+main section:nth-of-type(2),
+section:nth-of-type(3),
+section:nth-of-type(4),
+section:nth-of-type(5) {
+    background-color: #fdc700;
+    overflow: hidden;
+    height: 3em;
+}
+
+section:nth-of-type(2).ss2 {
+    animation: sect2 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sect2 {
+    from {
+        height: 3em;
+    }
+
+    to {
+        height: 38em;
+    }
+}
+
+
+section:nth-of-type(3).ss3 {
+    height: 100%;
+    animation: sect3 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sect3 {
+    from {
+        height: 3em;
+    }
+
+    to {
+        height: 33.5em;
+    }
+}
+
+section:nth-of-type(4).ss4 {
+    height: 100%;
+    animation: sect4 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sect4 {
+    from {
+        height: 3em;
+    }
+
+    to {
+        height: 59.1em;
+    }
+}
+
+
+section:nth-of-type(5).ss5 {
+    height: 100%;
+    animation: sect5 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sect5 {
+    from {
+        height: 3em;
+    }
+
+    to {
+        height: 54.9em;
+    }
+}
+
+/*END*/
+
+/*ICONS*/
+
+i.far.fa-heart {
+    font-size: 3em;
+}
+
+i.far.fa-star {
+    font-size: 3em;
+}
+
+i.fas.fa-download {
+    font-size: 3em;
+}
+
+/*END*/
+
+
+
+/*FOOTER*/
+
+body > footer {
+    background: #f4eee8;
+    padding: 5% 2% 0 0;
+
+}
+
+footer section {
+    background: url(/images/wow-logo-foot.min.png) 50% 0 no-repeat;
+    background-size: 90%;
+    margin: 0 30%;
+    padding: 15% 0 5% 0;
+    text-align: center;
+
+}
+
+/*END*/
+
+
+/*MAYOR BREAKPOINTS*/
+
+@media (min-width: 60em) {
+    body {
+        background: white;
+
+    }
+
+    nav form {
+        display: block;
+    }
+
+    /* Zoekbalk */
+    label [type="search"] {
+        border: solid 0.01em;
+        height: 1.9em;
+    }
+
+    label [type="search"]:focus {
+        outline: solid #9c1a7f;
+    }
+
+
+    nav ul button::after {
+        color: #9c1a7f;
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        padding: 0.2em;
+    }
+
+    nav {
+        margin-bottom: 3em;
+    }
+
+    nav li {
+        border-bottom: solid transparent;
+    }
+
+    nav li:hover {
+        border-bottom: solid #9c1a7f;
+        position: initial;
+    }
+
+    nav ul button {
+
+        border: none;
+        font-size: inherit;
+    }
+
+    nav ul button:hover {
+        background: #9c1a7f;
+
+    }
+
+    nav ul button:hover::after {
+        color: #fff
+    }
+
+    nav button > span {
+        display: none;
+    }
+
+    /* end */
+
+    nav li:nth-of-type(1)::after {
+        display: none
+    }
+
+}
+
+@media (max-width: 60em) {
+    body {
+        ;
+        border: none;
+        margin: 0.1em;
+    }
+
+    body header,
+    main {
+        margin: 0 2%;
+    }
+
+    #popup {
+        margin: 0 2%;
+    }
+
+    h1 {
+        margin: 0 40%;
+    }
+
+
+    nav ul {
+        margin-right: 1em;
+    }
+
+    nav {
+        z-index: 99;
+        position: fixed;
+        width: 97%;
+        background: #fff;
+        padding: 1em;
+        top: 0;
+        left: 0;
+    }
+
+    nav li a {
+        display: none;
+    }
+
+    main {
+        margin-top: 5em;
+        margin-bottom: 2%;
+    }
+
+    header section {
+        margin-top: 7em;
+        min-height: 5em;
+        padding-top: 3%;
+    }
+
+    main section {
+        padding: 0 4%;
+    }
+
+    main section p {
+        padding: 0 0 0 26%;
+        line-height: 3.1em;
+        width: 65%;
+        bottom: 0;
+    }
+
+    main section:nth-of-type(2) h2 {
+        height: 22.5em;
+    }
+
+    main section ul {
+        padding: 0 0 0 26%;
+        line-height: 3.1em;
+        height: 25em;
+        width: 80%
+    }
+
+
+    main section:nth-of-type(3) h2 {
+        height: 19.9em;
+    }
+
+    main section:nth-of-type(3) ul {
+        padding: 0 0 0 26%;
+        line-height: 3em;
+
+        bottom: -60px;
+    }
+
+
+    main section:nth-of-type(4) h2 {
+
+        background: url(/images/Section-4.2.png);
+        height: 41em;
+        background-size: cover;
+    }
+
+    main section:nth-of-type(4) p {
+        padding: 0 0 0 26%;
+        line-height: 3.13em;
+        width: 62%;
+    }
+
+    main section:nth-of-type(5) h2 {
+        background: url(/images/Section-5.2.png);
+        height: 38.5em;
+        background-size: cover;
+    }
+
+    main section:nth-of-type(5) p {
+        padding: 0 0 0 26%;
+        line-height: 3.1em;
+        width: 62%;
+    }
+
+    /*SLIDE EFFECT*/
+    main section:nth-of-type(2),
+    section:nth-of-type(3),
+    section:nth-of-type(4),
+    section:nth-of-type(5) {
+        background-color: #fdc700;
+        overflow: hidden;
+        height: 3em;
+    }
+
+    section:nth-of-type(2).ss2 {
+        animation: sect2 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect2 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 34em;
+        }
+    }
+
+
+    section:nth-of-type(3).ss3 {
+        height: 100%;
+        animation: sect3 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect3 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 30em;
+        }
+    }
+
+    section:nth-of-type(4).ss4 {
+        height: 100%;
+        animation: sect4 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect4 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 62.1em;
+        }
+    }
+
+
+    section:nth-of-type(5).ss5 {
+        height: 100%;
+        animation: sect5 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect5 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 57.9em;
+        }
+    }
+
+    /*END*/
+
+
+    footer section {
+        margin: 0 10%;
+        padding: 25% 0 5% 0;
+
+    }
+
+    body > footer {
+        padding: 5% 2% 0 0;
+
+    }
+
+
+}
+
+@media (max-width: 40em) {
+    nav ul {
+        margin-right: 1em;
+    }
+
+    h1 {
+        margin: 0 34%;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 0 4em;
+    }
+
+    main > section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    main section:nth-of-type(1) h2 {
+        background: url(/images/Section-1.3.png);
+        height: 15em;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section:nth-of-type(1) p {
+        padding: 0 1%;
+        line-height: 2.6em;
+        width: 98%;
+        bottom: 0;
+    }
+
+    main section:nth-of-type(2) h2 {
+        background: url(/images/Section-2.3.png);
+        height: 18.3em;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section:nth-of-type(2) ul {
+        padding: 0 1%;
+        line-height: 2.5em;
+        width: 98%;
+        bottom: 0;
+        height: 20.2em;
+    }
+
+    main section:nth-of-type(3) h2 {
+        background: url(/images/Section-3.3.png);
+        height: 18.3em;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section:nth-of-type(3) ul {
+        padding: 0 1%;
+        line-height: 2.5em;
+        width: 98%;
+        bottom: 0;
+        height: 20.2em;
+    }
+
+    main section:nth-of-type(4) h2 {
+        background: url(/images/Section-4.3.png);
+        height: 43.5em;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section:nth-of-type(4) p {
+        padding: 0 1%;
+        line-height: 2.5em;
+        width: 98%;
+        bottom: 0;
+    }
+
+    main section:nth-of-type(5) h2 {
+        background: url(/images/Section-5.3.png);
+        height: 38.2em;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section:nth-of-type(5) p {
+        padding: 0 1%;
+        line-height: 2.5em;
+        width: 98%;
+        bottom: 0;
+    }
+
+        /*SLIDE EFFECT*/
+    main section:nth-of-type(2),
+    section:nth-of-type(3),
+    section:nth-of-type(4),
+    section:nth-of-type(5) {
+        background-color: #fdc700;
+        overflow: hidden;
+        height: 3em;
+    }
+
+    section:nth-of-type(2).ss2 {
+        animation: sect2 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect2 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 27.5em;
+        }
+    }
+
+
+    section:nth-of-type(3).ss3 {
+        height: 100%;
+        animation: sect3 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect3 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 27.45em;
+        }
+    }
+
+    section:nth-of-type(4).ss4 {
+        height: 100%;
+        animation: sect4 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect4 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 64.8em;
+        }
+    }
+
+
+    section:nth-of-type(5).ss5 {
+        height: 100%;
+        animation: sect5 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes sect5 {
+        from {
+            height: 3em;
+        }
+
+        to {
+            height: 57.12em;
+        }
+    }
+
+    /*END*/
+
+    aside {
+        grid-template-columns: 30% 30% 30%;
+        font-size: small;
+    }
+
+}
